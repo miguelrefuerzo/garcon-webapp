@@ -1,15 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Home from './pages/Home';
+import MainCourse from './pages/MainCourse';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter, 
+        Routes, 
+        Route} from 'react-router-dom';
+import CategoryCard from 'component/CategoryCard';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/Menu" element={<CategoryCard/>}/>
+        <Route path="/Menu/Main" element={<MainCourse/>}/>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

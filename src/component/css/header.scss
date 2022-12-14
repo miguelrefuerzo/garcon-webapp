@@ -1,0 +1,36 @@
+.topnav {
+    background-color: #e4163d;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.divbrand{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.brandimage {
+    padding: 5px 10px;
+    font-size: 24px;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+
+.brandtitle {
+    margin-left: 10px;
+    color: #fefefe;
+}
+
+.dropdown {
+    color: #fefefe;
+}
+
+.dropdown-toggle {
+    white-space: nowrap;
+}
