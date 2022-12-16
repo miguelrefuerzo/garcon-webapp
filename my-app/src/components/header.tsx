@@ -5,12 +5,15 @@ import { Outlet, Link } from 'react-router-dom';
 const Header = () => {
     return(
         <>
-            <nav className=''>
-                <div className=''>
-                    <div className=''>Gc</div>
-                    <span className=''>Garcon</span>
+            <nav className='navbar'>
+                <div className='flex items'>
+                    <div className='brand'>Gc</div>
+                    <span className='title'>Garcon</span>
                 </div>
             </nav>
+            <div id='outlet'>
+                <Outlet/>
+            </div>
         </>
     )
 }
